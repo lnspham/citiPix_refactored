@@ -15,12 +15,27 @@ $(document).ready(function(){
 	//Capture user actions. Anonymous function
 	$('select').change(function(){
 	 	var optionSelect = $('select').val();//get user selection
-	 	var switchBg =$('body').attr('class');//add a class to the <body> tag
 
 	 	//if condition for the background images
 		if (optionSelect == "NYC"){
 
-			$('body').attr('class', switchBg);
+			$('body').attr('class', "nyc");
+
+		}else if (optionSelect == "SF") {
+
+			$('body').attr('class', "sf");
+
+		}else if (optionSelect == "LA"){
+
+			$('body').attr('class', "la");
+
+		}else if (optionSelect == "ATX"){
+
+			$('body').attr('class', "austin");
+
+		}else{
+
+			$('body').attr('class', "sydney");
 
 		}
 

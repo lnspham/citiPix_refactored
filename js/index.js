@@ -15,11 +15,14 @@ $(document).ready(function(){
 	//Capture user actions. Anonymous function
 	$('select').change(function(){
 	 	var optionSelect = $('select').val();//get user selection
-	//var citySelected = optionSelect.toLowerCase();//change to lower case
-	 	var switchBg =$('this').attr('class');//add a class to the <body> tag
+	 	var switchBg =$('body').attr('class');//add a class to the <body> tag
 
+	 	//if condition for the background images
+		if (optionSelect == "NYC"){
 
-	 	$('body').attr('class', switchBg);
+			$('body').attr('class', switchBg);
+
+		}
 
 	});
 
